@@ -1,298 +1,406 @@
-    @charset "UTF-8";
-    html,
-    body {
-        font-family: 'PT Serif', serif;
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Open Sans', sans-serif;
+@charset "UTF-8";
+html,
+body {
+    font-family: 'PT Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* slideshow home page */
+
+#slide-bg {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 20s linear infinite 0s;
+    animation-timing-function: ease-out;
+    background-image: url(images/dog-child.jpg);
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url(images/photo-1.png);
     }
-    /* slideshow home page */
-    
-    #slide-bg {
-        width: 100%;
-        height: 100vh;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        backface-visibility: hidden;
-        animation: slideBg 20s linear infinite 0s;
-        animation-timing-function: ease-out;
-        background-image: url(images/dog-child.jpg);
+    33% {
+        background-image: url(images/photo-2.png);
     }
-    
-    @keyframes slideBg {
-        0% {
-            background-image: url(images/photo-1.png);
-        }
-        33% {
-            background-image: url(images/photo-2.png);
-        }
-        66% {
-            background-image: url(images/photo-3.png)
-        }
-        100% {
-            background-image: url(images/photo-1.png)
-        }
+    66% {
+        background-image: url(images/photo-3.png)
     }
-    /* home page text */
-    
-    .phototext {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    100% {
+        background-image: url(images/photo-1.png)
     }
-    
-    .phototext h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        color: #fff;
-        font-size: 8em;
-        text-align: center;
-        padding-top: 1em;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-    }
-    
+}
+
+
+/* home page text */
+
+.phototext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phototext h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 8em;
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.phototext h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+    padding-left: 13em;
+    padding-right: 13em;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
     .phototext h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        color: #fff;
-        font-size: 1.4em;
-        text-align: center;
-        padding-left: 13em;
-        padding-right: 13em;
-        padding-bottom: 30px;
+        padding-left: 7em;
+        padding-right: 7em;
     }
-    
-    @media (max-width: 1000px) {
-        .phototext h2 {
-            padding-left: 7em;
-            padding-right: 7em;
-        }
-        .phototext h1 {
-            font-size: 5em;
-        }
+    .phototext h1 {
+        font-size: 5em;
     }
-    
-    @media (max-width: 600px) {
-        .phototext h2 {
-            padding-left: 2em;
-            padding-right: 2em;
-        }
+}
+
+@media (max-width: 600px) {
+    .phototext h2 {
+        padding-left: 2em;
+        padding-right: 2em;
     }
-    
-    .bottom-half-main {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
+}
+
+.bottom-half-main {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-half-main h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #494949;
+    text-align: center;
+}
+
+.imgstories {
+    display: float;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    z-index: 0;
+    position: absolute;
+}
+
+.stories {
+    margin-top: 15vh;
+    margin-left: 42vw;
+    position: float;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+    background: #fff;
+    border: #000;
+    width: 50vw;
+    height: 30vh;
+    padding: 40px;
+}
+
+.stories h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.stories p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.imgstories2 {
+    margin-top: 75vh;
+    margin-bottom: 5em;
+    z-index: 0;
+    position: absolute;
+}
+
+.stories2 {
+    margin-top: 35vh;
+    margin-left: 42vw;
+    position: float;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+    background: #fff;
+    border: #000;
+    width: 50vw;
+    height: 30vh;
+    padding: 40px;
+}
+
+.stories2 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.stories2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.learn-more {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #FFA41B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+.ending h1 {
+    margin-bottom: 15px;
+}
+
+
+/* navbar */
+
+.navbar-toggler {
+    margin-right: 16px;
+    background-color: #fff !important;
+}
+
+.navbar-toggler h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #ff8845;
+}
+
+
+/* button */
+
+.button {
+    background: linear-gradient(to right, #ff8845 0%, #ffb546 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 4em;
+    padding-left: 4em;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+/* fade in animation */
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    .bottom-half-main h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 2em;
-        color: #494949;
-        text-align: center;
+    100% {
+        opacity: 1;
     }
-    /* navbar */
-    
-    .navbar-toggler {
-        margin-right: 16px;
-        background-color: #fff !important;
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    .navbar-toggler h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: .9em;
-        padding-top: 5px;
-        padding-right: 15px;
-        padding-left: 15px;
-        color: #ff8845;
+    100% {
+        opacity: 1;
     }
-    /* button */
-    
-    .button {
-        background: linear-gradient(to right, #ff8845 0%, #ffb546 100%);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 1.4em;
-        border: none;
-        text-decoration: none;
-        color: white;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-right: 4em;
-        padding-left: 4em;
-        border-radius: 30px;
-        transition: 0.4s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    .button:hover {
-        text-decoration: none;
-        color: #fff;
-        opacity: 0.8;
+    100% {
+        opacity: 1;
     }
-    /* fade in animation */
-    
-    .fade-in {
-        animation: fadeIn ease 2s;
-        -webkit-animation: fadeIn ease 2s;
-        -moz-animation: fadeIn ease 2s;
-    }
-    
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-moz-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    /* sidebar */
-    
-    .sidenav {
-        height: 100%;
-        width: 25vw;
-        min-width: 200px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: gold;
-        overflow-x: hidden;
-        padding: 20px;
-    }
-    
-    .sidenav a {
-        padding: 4px;
-        display: block;
-        font-size: 24px;
-        color: black;
-    }
-    
-    .sidenav a:hover {
-        color: grey;
-        text-decoration: none;
-    }
-    
-    .sidenav hr {
-        height: 4px;
-        border-width: 0;
-        color: black;
-        background-color: black;
-    }
-    
-    .right-hand-side {
-        margin-left: 25vw;
-    }
-    
-    .info {
-        text-align: center;
-        margin: 50px;
-    }
-    
-    .dog-pic {
-        margin-top: 50px;
-        width: 650px;
-        height: 375px;
-        border-radius: 30px;
-        display: none;
-    }
-    
-    .icons {
-        font-size: 36px;
-    }
-    /* sidebar */
-    
-    .sidenav {
-        height: 100%;
-        width: 25vw;
-        min-width: 200px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: gold;
-        overflow-x: hidden;
-        padding: 20px;
-    }
-    
-    .sidenav a {
-        padding: 4px;
-        display: block;
-        font-size: 24px;
-        color: black;
-    }
-    
-    .sidenav a:hover {
-        color: grey;
-        text-decoration: none;
-    }
-    
-    .sidenav hr {
-        height: 4px;
-        border-width: 0;
-        color: black;
-        background-color: black;
-    }
-    
-    .right-hand-side {
-        margin-left: 25vw;
-    }
-    
-    .info {
-        text-align: center;
-        margin: 50px;
-    }
-    
-    .dog-pic {
-        margin: 50px auto 10px;
-        width: 650px;
-        height: 375px;
-        border-radius: 30px;
-        display: none;
-    }
-    
-    .icons {
-        font-size: 50px;
-        margin-top: 0px;
-    }
-    
-    .fa-times-circle {
-        padding: 30px 100px;
-        border-radius: 20px;
-    }
-    
-    .fa-times-circle:hover {
-        color: red;
-        background-color: lightcoral;
-    }
-    
-    .fa-check-circle {
-        padding: 30px 100px;
-        border-radius: 20px;
-    }
-    
-    .fa-check-circle:hover {
-        color: green;
-        background-color: lightgreen;
-    }
+}
+
+
+/* sidebar */
+
+.sidenav {
+    height: 100%;
+    width: 25vw;
+    min-width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.sidenav a {
+    padding: 4px;
+    display: block;
+    font-size: 24px;
+    color: black;
+}
+
+.sidenav a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.sidenav hr {
+    height: 4px;
+    border-width: 0;
+    color: black;
+    background-color: black;
+}
+
+.right-hand-side {
+    margin-left: 25vw;
+}
+
+.info {
+    text-align: center;
+    margin: 50px;
+}
+
+.dog-pic {
+    margin-top: 50px;
+    width: 650px;
+    height: 375px;
+    border-radius: 30px;
+    display: none;
+}
+
+.icons {
+    font-size: 36px;
+}
+
+
+/* sidebar */
+
+.sidenav {
+    height: 100%;
+    width: 25vw;
+    min-width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.sidenav a {
+    padding: 4px;
+    display: block;
+    font-size: 24px;
+    color: black;
+}
+
+.sidenav a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.sidenav hr {
+    height: 4px;
+    border-width: 0;
+    color: black;
+    background-color: black;
+}
+
+.right-hand-side {
+    margin-left: 25vw;
+}
+
+.info {
+    text-align: center;
+    margin: 50px;
+}
+
+.dog-pic {
+    margin: 50px auto 10px;
+    width: 650px;
+    height: 375px;
+    border-radius: 30px;
+    display: none;
+}
+
+.icons {
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.fa-times-circle {
+    padding: 30px 100px;
+    border-radius: 20px;
+}
+
+.fa-times-circle:hover {
+    color: red;
+    background-color: lightcoral;
+}
+
+.fa-check-circle {
+    padding: 30px 100px;
+    border-radius: 20px;
+}
+
+.fa-check-circle:hover {
+    color: green;
+    background-color: lightgreen;
+}
