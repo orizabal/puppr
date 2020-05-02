@@ -23,14 +23,30 @@
 
     </header>
 
-    <div id="slide-bg" class="phototext">
+    <div class="sidenav">
+        <h2>Profile</h2>
 
-        <h1>Test</h1>
+        <hr>
 
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
     </div>
 
-    <div>
-        <a href="selection.html">Click me</a>
+    <div class="right-hand-side">
+        <div class="info">
+            <h2>Choosse your dogs!</h2>
+            <img src="images/dog-play.jpg" class="dog-pic">
+            <img src="images/dog-child.jpg" class="dog-pic">
+
+            <div class="icons">
+                <!-- <i class="fa fa-check-circle"></i>
+                <i class="fa fa-times-circle"></i> -->
+                <i class="fa fa-chevron-circle-left" onclick="add_slide(-1)"></i>
+                <i class="fa fa-chevron-circle-right" onclick="add_slide(1)"></i>
+            </div>
+        </div>
+
     </div>
 
     <footer>
@@ -38,5 +54,7 @@
     </footer>
 
 </body>
+
+<script src="scripts.js"></script>
 
 </html>
