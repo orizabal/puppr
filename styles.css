@@ -6,5 +6,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slide;
+    animation: slideBg 8s;
 }
