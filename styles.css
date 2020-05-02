@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+/* slideshow main page */
+
 #slide-bg {
     width: 100%;
     height: 100vh;
@@ -18,4 +21,14 @@
     50% {
         background-image: url(images/graffiti.jpeg);
     }
+}
+
+h1 {
+    color: #fff;
+}
+
+.phototext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
