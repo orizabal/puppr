@@ -8,14 +8,14 @@
     backface-visibility: hidden;
     animation: slideBg 15s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    background-image: url(images/Clouds.jpg);
+    background-image: url(images/dog-child.jpg);
 }
 
 @keyframes slideBg {
     0% {
-        background-image: url(images/Clouds.jpg);
+        background-image: url(images/dog-child.jpg);
     }
     50% {
-        background-image: url(images/graffiti.jpeg);
+        background-image: url(images/dog.jpg);
     }
 }
