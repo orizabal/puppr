@@ -196,6 +196,60 @@
     }
     
     .dog-pic {
+        margin-top: 50px;
+        width: 650px;
+        height: 375px;
+        border-radius: 30px;
+        display: none;
+    }
+    
+    .icons {
+        font-size: 36px;
+    }
+    /* sidebar */
+    
+    .sidenav {
+        height: 100%;
+        width: 25vw;
+        min-width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: gold;
+        overflow-x: hidden;
+        padding: 20px;
+    }
+    
+    .sidenav a {
+        padding: 4px;
+        display: block;
+        font-size: 24px;
+        color: black;
+    }
+    
+    .sidenav a:hover {
+        color: grey;
+        text-decoration: none;
+    }
+    
+    .sidenav hr {
+        height: 4px;
+        border-width: 0;
+        color: black;
+        background-color: black;
+    }
+    
+    .right-hand-side {
+        margin-left: 25vw;
+    }
+    
+    .info {
+        text-align: center;
+        margin: 50px;
+    }
+    
+    .dog-pic {
         margin: 50px auto 10px;
         width: 650px;
         height: 375px;
