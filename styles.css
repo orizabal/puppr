@@ -6,5 +6,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slideBg 8s;
+    animation: slideBg 15s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(images/Clouds.jpg);
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url(images/Clouds.jpg);
+    }
+    50% {
+        background-image: url(images/graffiti.jpeg);
+    }
 }
