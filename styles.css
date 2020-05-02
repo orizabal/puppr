@@ -196,3 +196,116 @@
     .icons {
         font-size: 36px;
     }
+    
+    @charset "UTF-8";
+    /* slideshow main page */
+    
+    #slide-bg {
+        width: 100%;
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+        /* animation: slideBg 2s linear infinite 2s; */
+        animation: 4s;
+        animation-timing-function: ease-in-out;
+        background-image: url(images/dog-child.jpg);
+    }
+    
+    @keyframes slideBg {
+        0% {
+            background-image: url(images/dog-child.jpg);
+        }
+        25% {
+            background-image: url(images/dog.jpg);
+        }
+        50% {
+            background-image: url(images/dog-play.jpg);
+        }
+    }
+    
+    h1 {
+        color: #fff;
+    }
+    
+    .phototext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* sidebar */
+    
+    .sidenav {
+        height: 100%;
+        width: 25vw;
+        min-width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: gold;
+        overflow-x: hidden;
+        padding: 20px;
+    }
+    
+    .sidenav a {
+        padding: 4px;
+        display: block;
+        font-size: 24px;
+        color: black;
+    }
+    
+    .sidenav a:hover {
+        color: grey;
+        text-decoration: none;
+    }
+    
+    .sidenav hr {
+        height: 4px;
+        border-width: 0;
+        color: black;
+        background-color: black;
+    }
+    
+    .right-hand-side {
+        margin-left: 25vw;
+    }
+    
+    .info {
+        text-align: center;
+        margin: 50px;
+    }
+    
+    .dog-pic {
+        margin: 50px auto 10px;
+        width: 650px;
+        height: 375px;
+        border-radius: 30px;
+        display: none;
+    }
+    
+    .icons {
+        font-size: 50px;
+        margin-top: 0px;
+    }
+    
+    .fa-times-circle {
+        padding: 30px 100px;
+        border-radius: 20px;
+    }
+    
+    .fa-times-circle:hover {
+        color: red;
+        background-color: lightcoral;
+    }
+    
+    .fa-check-circle {
+        padding: 30px 100px;
+        border-radius: 20px;
+    }
+    
+    .fa-check-circle:hover {
+        color: green;
+        background-color: lightgreen;
+    }
