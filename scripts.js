@@ -1,4 +1,39 @@
-let shelter_array = ["images/photo-1.png", "images/photo-2.png", "images/photo-3.png"];
+let baseURL = 'https://cors-anywhere.herokuapp.com/https://puppr-676a9.uk.r.appspot.com/';
+let matchBtn = document.querySelector("#match");
+let rejectBtn = document.querySelector("#reject");
+
+let clicked = false;
+let shelter_array = ["images/photo-1.png"];
+
+const fetchPictures = (location) => {
+    let photoSources = [];
+    axios.get(baseURL + location.toLowerCase())
+    .then(response => {
+        for (var key in response.data) {
+            console.log(response.data[key]['Photo']);
+            photoSources.push(response.data[key]['Photo']);
+        }
+    });
+    console.log(photoSources);
+    return photoSources;
+}
+
+matchBtn.addEventListener("click", function() {
+    if (!clicked) {
+        fetchPictures('Toronto');
+        clicked = true;
+    }
+});
+
+rejectBtn.addEventListener("click", function() {
+    if (!clicked) {
+        fetchPictures('Toronto');
+        clicked = true;
+    }
+});
+
+
+//let shelter_array = ["images/photo-1.png", "images/photo-2.png", "images/photo-3.png"];
 let shelter_num = 0;
 
 var slide_i = 1;
