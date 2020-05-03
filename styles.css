@@ -430,7 +430,6 @@ textarea {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: lightgray;
     padding-top: 50px;
     transition: 0.5s;
 }
