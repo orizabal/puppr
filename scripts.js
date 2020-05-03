@@ -33,12 +33,11 @@ rejectBtn.addEventListener("click", function() {
     }
 });
 
-
-//let shelter_array = ["images/photo-1.png", "images/photo-2.png", "images/photo-3.png"];
 let shelter_num = 0;
 
 var slide_i = 1;
 show_slide(slide_i);
+var i;
 
 function add_slide(n) {
     show_slide(slide_i += n);
@@ -49,20 +48,10 @@ function add_slide(n) {
     }
 }
 
-var i;
-
 function show_slide(n) {
-    var x = document.getElementsByClassName("dog-pic");
-    if (n > x.length) {
-        slide_i = 1;
-    }
-    if (n < 1) {
-        slide_i = x.length;
-    }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slide_i - 1].style.display = "block";
+    var pic = document.getElementById("dog-pic");
+    pic.src = shelter_array[n - 1];
+
 }
 
 let selected_array = [];
@@ -72,8 +61,6 @@ function add_to_profile() {
     selected_array.push(shelter_array[shelter_num]);
     add_slide(1);
 
-    // document.getElementById("length").innerHTML = selected_array.length;
-    // document.getElementById("num").innerHTML = shelter_num;
     document.getElementById("dog" + num).src = selected_array[num - 1];
     num += 1;
 }

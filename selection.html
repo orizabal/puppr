@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Puppr | Selection</title>
+    <title>puppr | Selection</title>
     <!-- <link rel="icon" href="" type="image/x-icon"> -->
 
     <meta charset="utf-8">
@@ -12,7 +12,6 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -55,13 +54,11 @@
     <div class="right-hand-side">
         <div class="info">
             <div class="dog-profile">
-                <img src="images/photo-1.png" class="dog-pic">
-                <img src="images/photo-2.png" class="dog-pic">
-                <img src="images/photo-3.png" class="dog-pic">
+                <img src="images/photo-1.png" id="dog-pic" class="dog-pic">
             </div>
 
             <div class="icons">
-                <i class="fa fa-times-circle raise" id="match" onclick=" add_slide(1)"></i>
+                <i class="fa fa-times-circle raise" id="match" onclick="add_slide(1)"></i>
                 <i class="fa fa-check-circle raise" id="reject" onclick="add_to_profile()"></i>
             </div>
         </div>

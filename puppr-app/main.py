@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/toronto')
+@app.route('/')
 def dogs():
     return all_dogs()
 
