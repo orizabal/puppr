@@ -397,24 +397,35 @@ body {
 
 /* contact page */
 
-h2 {
-    padding-top: 20px;
+.label-sam {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 18;
 }
 
-label {
-    font-size: 24px;
-    margin-top: 20px;
+h2 {
+    padding-top: 20px;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 600;
 }
 
 input[type=text],
 select,
 textarea {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid black;
     box-sizing: border-box;
     resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-sam:focus {
+    box-shadow: 0 0 3.5px #ff8845;
 }
 
 .contact-button {
@@ -431,7 +442,40 @@ textarea {
     padding-left: 4em;
     border-radius: 30px;
     transition: 0.4s;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.wrapper-left {
+    width: 30vw;
+    flex-grow: 2;
+    object-fit: fill;
+    display: flex;
+    overflow: hidden;
+}
+
+.wrapper-left img {
+    width: 100%;
+    max-height: 100vh;
+}
+
+.wrapper-right {
+    flex-grow: 3;
+}
+
+.sub-right-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    padding: 55px;
 }
 
 
