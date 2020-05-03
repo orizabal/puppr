@@ -436,6 +436,7 @@ h2 {
 
 label {
     font-size: 24px;
+    margin-top: 20px;
 }
 
 input[type=text],
@@ -447,4 +448,21 @@ textarea {
     border: 2px solid black;
     box-sizing: border-box;
     resize: vertical;
+}
+
+.contact-button {
+    background: linear-gradient(to right, #ff8845 0%, #ffb546 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 4em;
+    padding-left: 4em;
+    border-radius: 30px;
+    transition: 0.4s;
+    margin-top: 20px;
 }

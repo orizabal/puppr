@@ -33,7 +33,6 @@ let selected_array = [];
 let num = 1;
 
 function add_to_profile() {
-
     selected_array.push(shelter_array[shelter_num]);
     add_slide(1);
 
