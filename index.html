@@ -37,9 +37,33 @@
         <div id="slide-bg" class="phototext">
             <h1>Match. Adopt. Love.</h1>
             <h2>Welcome to puppr, a platform to connect you with dogs in need. Register today to meet amazing dogs near you!</h2>
-            <a href="#" class="button raise"> Sign Up</a>
+            <a class="button raise" onclick="document.getElementById('rule-overlay').style.display = 'block'" style="width: auto;">Sign Up</a>
         </div>
     </div>
+
+    <div id="rule-overlay" class="rule-overlay">
+        <span onclick="document.getElementById('rule-overlay').style.display = 'none'" class="close"></span>
+
+        <div class="rule-overlay-content">
+            <div class="container">
+                <h2 class="text-center">Rules</h2>
+                <p>Things aren't going well at all with mom today. She is just a limp noodle and wants to sleep all the time. I sure hope that things get better soon. There once lived an old man and an old woman who were peasants and had to work hard to
+                    earn their daily bread. The old man used to go to fix fences and do other odd jobs for the farmers around, and while he was gone the old woman, his wife, did the work of the house and worked in their own little plot of land. It was
+                    that terrifying feeling you have as you tightly hold the covers over you with the knowledge that there is something hiding under your bed. You want to look, but you don't at the same time. You're frozen with fear and unable to act.
+                    That's where she found herself and she didn't know what to do next. Things aren't going well at all with mom today. She is just a limp noodle and wants to sleep all the time. I sure hope that things get better soon. There once lived
+                    an old man and an old woman who were peasants and had to work hard to earn their daily bread. The old man used to go to fix fences and do other odd jobs for the farmers around, and while he was gone the old woman, his wife, did the
+                    work of the house and worked in their own little plot of land. It was that terrifying feeling you have as you tightly hold the covers over you with the knowledge that there is something hiding under your bed. You want to look, but
+                    you don't at the same time. You're frozen with fear and unable to act. That's where she found herself and she didn't know what to do next</p>
+
+                <a class="cancel-btn" onclick="document.getElementById('rule-overlay').style.display = 'none'">Cancel</a>
+                <a class="continue-btn" style="float:right;" href="contact.html">Continue</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <div class="bottom-half-main">
         <h1> We're here to find your life long friend</h1>
@@ -77,13 +101,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
 
 </body>
 
