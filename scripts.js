@@ -7,24 +7,13 @@ let shelter_array = [];
 
 const fetchPictures = (location) => {
     axios.get(baseURL + location.toLowerCase())
-<<<<<<< HEAD
         .then(response => {
             for (var key in response.data) {
                 console.log(response.data[key]['Photo']);
-                photoSources.push(response.data[key]['Photo']);
+                shelter_array.push(response.data[key]['Photo']);
             }
+            console.log(shelter_array);
         });
-    console.log(photoSources);
-    return photoSources;
-=======
-    .then(response => {
-        for (var key in response.data) {
-            console.log(response.data[key]['Photo']);
-            shelter_array.push(response.data[key]['Photo']);
-        }
-        console.log(shelter_array);
-    });
->>>>>>> 2fdc4ef117d6f73fc68a4e1b9f8bfb8789623f88
 }
 
 matchBtn.addEventListener("click", function() {
