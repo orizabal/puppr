@@ -196,44 +196,6 @@
     .icons {
         font-size: 36px;
     }
-    
-    @charset "UTF-8";
-    /* slideshow main page */
-    
-    #slide-bg {
-        width: 100%;
-        height: 100vh;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        backface-visibility: hidden;
-        /* animation: slideBg 2s linear infinite 2s; */
-        animation: 4s;
-        animation-timing-function: ease-in-out;
-        background-image: url(images/dog-child.jpg);
-    }
-    
-    @keyframes slideBg {
-        0% {
-            background-image: url(images/dog-child.jpg);
-        }
-        25% {
-            background-image: url(images/dog.jpg);
-        }
-        50% {
-            background-image: url(images/dog-play.jpg);
-        }
-    }
-    
-    h1 {
-        color: #fff;
-    }
-    
-    .phototext {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     /* sidebar */
     
     .sidenav {
