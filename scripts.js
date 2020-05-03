@@ -19,8 +19,6 @@ function show_slide(n) {
         x[i].style.display = "none";
     }
     x[slide_i - 1].style.display = "block";
-
-    console.log("test")
 }
 
 var dog_array = new Array();
