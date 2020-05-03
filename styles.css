@@ -374,9 +374,13 @@
     
     .dog-pic {
         margin: 0 auto 0;
-        width: 90%;
+        width: 60%;
         height: 90%;
         border-radius: 15px;
+    }
+    
+    .dog-info {
+        margin-top: 30px;
     }
     
     .dog-info h3 {
@@ -385,6 +389,7 @@
     
     .dog-info p {
         display: block;
+        margin-top: 10px;
     }
     /* raise animation */
     
@@ -483,6 +488,7 @@
         object-fit: fill;
         display: flex;
         overflow: hidden;
+        background-image: url(images/profile-doggo.jpg)
     }
     
     .wrapper-right {
