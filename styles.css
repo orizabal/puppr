@@ -732,11 +732,14 @@ textarea {
     flex-grow: 2;
     object-fit: fill;
     display: flex;
-    overflow: hidden;
+    position: relative;
+    background-image: url('images/girlanddog.jpg');
 }
 
 .wrapper-left img {
     width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
 .wrapper-right {
