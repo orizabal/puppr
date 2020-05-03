@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+let shelter_array = ["images/photo-1.png", "images/photo-2.png", "images/photo-3.png"];
+=======
 let baseURL = 'https://cors-anywhere.herokuapp.com/https://puppr-676a9.uk.r.appspot.com/';
 let matchBtn = document.querySelector("#match");
 let rejectBtn = document.querySelector("#reject");
@@ -30,6 +33,7 @@ rejectBtn.addEventListener("click", function() {
     }
 });
 
+>>>>>>> 4efd5856be043ffb3888c8f4898d06a3169916cc
 let shelter_num = 0;
 var slide_i = 1;
 show_slide(slide_i);
@@ -57,6 +61,11 @@ function add_to_profile() {
     selected_array.push(shelter_array[shelter_num]);
     add_slide(1);
 
+<<<<<<< HEAD
+    // document.getElementById("length").innerHTML = selected_array.length;
+    // document.getElementById("num").innerHTML = shelter_num;
+=======
+>>>>>>> 4efd5856be043ffb3888c8f4898d06a3169916cc
     document.getElementById("dog" + num).src = selected_array[num - 1];
     num += 1;
 }
