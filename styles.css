@@ -454,10 +454,10 @@ textarea {
 
 .rule-overlay-content {
     background-color: white;
-    opacity: 100%;
-    margin: 15% auto 15% auto;
+    margin: 5% auto 15% auto;
     border: 1px solid black;
     width: 70%;
+    opacity: 100%;
 }
 
 .cancel-btn {
