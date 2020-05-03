@@ -31,7 +31,6 @@ rejectBtn.addEventListener("click", function() {
 });
 
 let shelter_num = 0;
-
 var slide_i = 1;
 show_slide(slide_i);
 var i;
