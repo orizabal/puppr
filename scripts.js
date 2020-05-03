@@ -7,11 +7,11 @@ let shelter_array = ["images/doggo.jpg"];
 let link_array = ["https://torontohumanesociety.com/adopt-a-pet/dogs/41015170"]; //I'm adding a repeated link for the first fake dog
 
 let dogname_array = ["Molly"];
-let dogage_array = ["2 years 7 months"];
-let dogdesc_array = ["Molly is a caring..."];
+let dogage_array = ["2"];
+let dogdesc_array = ["Molly is the most energetic dog you will ever meet! She is constantly wagging her tail, and running to say hi to people. She absolutely loves park days, and will happily be sprinting back and forth across the field until is completely out of energy, then she will continue running. Molly is one to adore countrysides, with the nice long walks as the sunsets, and playing catch in the grass. She is always curious, and you will always see her saying (or attempting to say) hi to the nearly wildlife. Her favourite toy is the outdoors; rain or shine, winter or summer, as soon as you open that door, she will be outside in a heartbeat."];
 let dogsex_array = ["female"];
-let dogprimbreed_array = ["idk"];
-let dogsecbreed_array = ["either"];
+let dogprimbreed_array = ["Shepard"];
+let dogsecbreed_array = ["Mix"];
 
 const fetchData = (location) => {
     axios.get(baseURL + location.toLowerCase())
