@@ -9,7 +9,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slideBg 12s linear infinite 0s;
+    /* animation: slideBg 2s linear infinite 2s; */
+    animation: 4s;
     animation-timing-function: ease-in-out;
     background-image: url(images/dog-child.jpg);
 }
@@ -81,7 +82,7 @@ h1 {
 }
 
 .dog-pic {
-    margin-top: 50px;
+    margin: 50px auto 10px;
     width: 650px;
     height: 375px;
     border-radius: 30px;
@@ -89,5 +90,26 @@ h1 {
 }
 
 .icons {
-    font-size: 36px;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.fa-times-circle {
+    padding: 30px 100px;
+    border-radius: 20px;
+}
+
+.fa-times-circle:hover {
+    color: red;
+    background-color: lightcoral;
+}
+
+.fa-check-circle {
+    padding: 30px 100px;
+    border-radius: 20px;
+}
+
+.fa-check-circle:hover {
+    color: green;
+    background-color: lightgreen;
 }
