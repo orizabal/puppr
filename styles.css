@@ -70,7 +70,32 @@
             padding-left: 7em;
             padding-right: 7em;
         }
+        .phototext h1 {
+            font-size: 5em;
+        }
     }
+    
+    @media (max-width: 600px) {
+        .phototext h2 {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+    }
+    
+    .bottom-half-main {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bottom-half-main h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 2em;
+        color: #494949;
+        text-align: center;
+    }
+    /* navbar */
     
     .navbar-toggler {
         margin-right: 16px;
