@@ -4,7 +4,7 @@ let matchBtn = document.querySelector("#match");
 let rejectBtn = document.querySelector("#reject");
 
 let clicked = false;
-let shelter_array = ["images/photo-1.png"];
+let shelter_array = ["images/photo-1.png", "images/photo-2.png"];
 let link_array = ["https://torontohumanesociety.com/adopt-a-pet/dogs/41015170"]; //I'm adding a repeated link for the first fake dog
 
 const fetchData = (location) => {
