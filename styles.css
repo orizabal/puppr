@@ -335,6 +335,8 @@ body {
 
 .right-hand-side {
     margin-left: 25vw;
+    margin-bottom: -20px;
+    margin-top: -10px;
 }
 
 .info {
@@ -342,22 +344,35 @@ body {
     margin: 50px;
 }
 
+.dog-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .dog-pic {
-    margin: 60px auto 10px;
+    margin: 0 auto 0;
     width: 90%;
     height: 90%;
     border-radius: 15px;
 }
 
-.icons {
-    font-size: 60px;
-    margin-top: 0px;
-}
+
+/* raise animation */
 
 .raise:hover,
 .raise:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.2em);
+}
+
+
+/* icon details */
+
+.icons {
+    font-size: 60px;
+    margin-top: 0px;
+    color: #FFA41B;
 }
 
 .icons i {
@@ -378,8 +393,11 @@ body {
 }
 
 .fa-check-circle:hover {
-    color: green;
+    color: #3AD74A;
 }
+
+
+/* contact page */
 
 h2 {
     padding-top: 20px;
@@ -430,12 +448,15 @@ textarea {
     width: 100%;
     height: 100%;
     overflow: auto;
+    background-color: lightgray;
+    opacity: 80%;
     padding-top: 50px;
     transition: 0.5s;
 }
 
 .rule-overlay-content {
     background-color: white;
+    opacity: 100%;
     margin: 15% auto 15% auto;
     border: 1px solid black;
     width: 70%;
