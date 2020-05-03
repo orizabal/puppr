@@ -1,39 +1,38 @@
-<<<<<<< HEAD
-let shelter_array = ["images/photo-1.png", "images/photo-2.png", "images/photo-3.png"];
-=======
 let baseURL = 'https://cors-anywhere.herokuapp.com/https://puppr-676a9.uk.r.appspot.com/';
+let baseShelterURL = 'https://torontohumanesociety.com/adopt-a-pet/dogs/';
 let matchBtn = document.querySelector("#match");
 let rejectBtn = document.querySelector("#reject");
 
 let clicked = false;
-let shelter_array = ["images/photo-1.png", "images/photo-2.png"];
+let shelter_array = ["images/photo-1.png"];
+let link_array = ["https://torontohumanesociety.com/adopt-a-pet/dogs/41015170"]; //I'm adding a repeated link for the first fake dog
 
-const fetchPictures = (location) => {
+const fetchData = (location) => {
     axios.get(baseURL + location.toLowerCase())
-        .then(response => {
-            for (var key in response.data) {
-                console.log(response.data[key]['Photo']);
-                shelter_array.push(response.data[key]['Photo']);
-            }
-            console.log(shelter_array);
-        });
+    .then(response => {
+        for (var key in response.data) {
+            shelter_array.push(response.data[key]['Photo']);
+            link_array.push(baseShelterURL + response.data[key]['ID']);
+        }
+        console.log(shelter_array);
+        console.log(link_array);
+    });
 }
 
 matchBtn.addEventListener("click", function() {
     if (!clicked) {
-        fetchPictures('Toronto');
+        fetchData('Toronto');
         clicked = true;
     }
 });
 
 rejectBtn.addEventListener("click", function() {
     if (!clicked) {
-        fetchPictures('Toronto');
+        fetchData('Toronto');
         clicked = true;
     }
 });
 
->>>>>>> 4efd5856be043ffb3888c8f4898d06a3169916cc
 let shelter_num = 0;
 var slide_i = 1;
 show_slide(slide_i);
@@ -61,11 +60,6 @@ function add_to_profile() {
     selected_array.push(shelter_array[shelter_num]);
     add_slide(1);
 
-<<<<<<< HEAD
-    // document.getElementById("length").innerHTML = selected_array.length;
-    // document.getElementById("num").innerHTML = shelter_num;
-=======
->>>>>>> 4efd5856be043ffb3888c8f4898d06a3169916cc
     document.getElementById("dog" + num).src = selected_array[num - 1];
     num += 1;
 }
