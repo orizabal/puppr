@@ -524,32 +524,6 @@ textarea {
     padding: 55px;
 }
 
-
-/* overlay */
-
-.rule-overlay {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: lightgray;
-    opacity: 80%;
-    padding-top: 50px;
-    transition: 0.5s;
-}
-
-.rule-overlay-content {
-    background-color: white;
-    opacity: 100%;
-    margin: 15% auto 15% auto;
-    border: 1px solid black;
-    width: 70%;
-}
-
 .cancel-btn {
     background: red;
     color: white;

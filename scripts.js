@@ -6,12 +6,12 @@ let rejectBtn = document.querySelector("#reject");
 let shelter_array = ["images/doggo.jpg"];
 let link_array = ["https://torontohumanesociety.com/adopt-a-pet/dogs/41015170"]; //I'm adding a repeated link for the first fake dog
 
-let dogname_array = ["Molly", "Terra"];
-let dogage_array = ["2 years 7 months", "2 years 1 months"];
-let dogdesc_array = ["Molly is a caring...", "If Terra's soft, velvety ears, and kind, brown eyes don't you win you over, her personality will. This girl's a gem. Sweet, loving and loyal, she is as adventurous as she is affectionate. Every day a new adventure. She lives for car rides (front seat or back!), trail runs (she is the fastest!), and dog parks (squirrels?). After a long day of exploring the world and chasing the odd squirrel, she loves sitting down with her people for a cuddle/pet session."];
-let dogsex_array = ["female", "male"];
-let dogprimbreed_array = ["idk", "retriever"];
-let dogsecbreed_array = ["either", "mix"];
+let dogname_array = ["Molly"];
+let dogage_array = ["2 years 7 months"];
+let dogdesc_array = ["Molly is a caring..."];
+let dogsex_array = ["female"];
+let dogprimbreed_array = ["idk"];
+let dogsecbreed_array = ["either"];
 
 const fetchData = (location) => {
     axios.get(baseURL + location.toLowerCase())
