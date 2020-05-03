@@ -110,7 +110,7 @@ body {
 }
 
 .stories {
-    margin-top: 15vh;
+    margin-top: 20vh;
     margin-left: 42vw;
     position: float;
     display: flex;
@@ -145,7 +145,7 @@ body {
 }
 
 .stories2 {
-    margin-top: 45vh;
+    margin-top: 40vh;
     margin-left: 42vw;
     position: float;
     display: flex;
@@ -335,8 +335,6 @@ body {
 
 .right-hand-side {
     margin-left: 25vw;
-    margin-bottom: -20px;
-    margin-top: -10px;
 }
 
 .info {
