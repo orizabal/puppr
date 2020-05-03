@@ -330,6 +330,10 @@ body {
     border-radius: 5px;
 }
 
+.small-photos:hover {
+    opacity: 80%;
+}
+
 
 /* right side of page */
 
