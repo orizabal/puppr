@@ -6,16 +6,14 @@ let clicked = false;
 let shelter_array = ["images/photo-1.png"];
 
 const fetchPictures = (location) => {
-    let photoSources = [];
     axios.get(baseURL + location.toLowerCase())
     .then(response => {
         for (var key in response.data) {
             console.log(response.data[key]['Photo']);
-            photoSources.push(response.data[key]['Photo']);
+            shelter_array.push(response.data[key]['Photo']);
         }
+        console.log(shelter_array);
     });
-    console.log(photoSources);
-    return photoSources;
 }
 
 matchBtn.addEventListener("click", function() {
