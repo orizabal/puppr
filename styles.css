@@ -275,6 +275,7 @@
     .icons {
         font-size: 50px;
         margin-top: 0px;
+        cursor: pointer;
     }
     
     .fa-times-circle {
@@ -302,4 +303,23 @@
         margin-bottom: 20px;
         margin-right: 7px;
         border-radius: 10px;
+    }
+    
+    h2 {
+        padding: 12px;
+    }
+    
+    label {
+        font-size: 24px;
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        resize: vertical;
     }
