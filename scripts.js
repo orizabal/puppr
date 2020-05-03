@@ -20,7 +20,7 @@ const fetchData = (location) => {
                 shelter_array.push(response.data[key]['Photo']);
                 link_array.push(baseShelterURL + response.data[key]['ID']);
                 dogname_array.push(response.data[key]['Name']);
-                dogage_array.push((parseInt(response.data[key]['Age'])/14).toFixed(0));
+                dogage_array.push((parseInt(response.data[key]['Age']) / 14).toFixed(0));
                 dogdesc_array.push(response.data[key]["description"].split("<br/><br/>", 2));
                 dogsex_array.push(response.data[key]['Sex']);
                 dogprimbreed_array.push(response.data[key]['PrimaryBreed']);
