@@ -627,17 +627,22 @@
 }
 
 
-/* contact page */
+/* contact page ============================================================================*/
 
 .label-sam {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin-top: 20px;
-    font-size: 18;
+    font-size: 1.2rem;
 }
 
-h2 {
-    padding-top: 20px;
+.text-center, .first{
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 600;
+}
+
+.text-center, .second{
+    padding-top: 10px;
     font-family: 'El Messiri', sans-serif;
     font-weight: 600;
 }
@@ -674,7 +679,28 @@ textarea {
     padding-left: 4em;
     border-radius: 30px;
     transition: 0.4s;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 35px 0;
+}
+.cancel-button {
+    background: linear-gradient(to right, #ff8845 0%, #ffb546 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 4em;
+    padding-left: 4em;
+    border-radius: 30px;
+    transition: 0.4s;
+    margin: 20px 0 35px 35px;
+}
+
+.cancel-button:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .wrapper {
@@ -684,7 +710,7 @@ textarea {
 }
 
 .wrapper-left {
-    width: 30vw;
+    width: 45vw;
     flex-grow: 2;
     object-fit: fill;
     display: flex;
@@ -693,11 +719,11 @@ textarea {
 
 .wrapper-left img {
     width: 100%;
-    max-height: 100vh;
 }
 
 .wrapper-right {
     flex-grow: 3;
+    padding: 0 65px 0 65px;
 }
 
 .sub-right-wrapper {
@@ -707,7 +733,7 @@ textarea {
 
 .container {
     width: 90%;
-    padding: 55px;
+    padding: 0 55px 0 55px;
 }
 
 
