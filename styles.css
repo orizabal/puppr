@@ -530,56 +530,65 @@ textarea {
 .rule-overlay {
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
+    background-color: rgba(71, 74, 81, 0.5);
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: lightgray;
-    opacity: 80%;
+    opacity: 1;
     padding-top: 50px;
     transition: 0.5s;
 }
 
 .rule-overlay-content {
+    display: flex;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     opacity: 100%;
-    margin: 15% auto 15% auto;
-    border: 1px solid black;
-    width: 70%;
+    margin: 5% auto 15% auto;
+    border-radius: 10px;
+    width: 45%;
+    padding: 25px;
 }
 
-.cancel-btn {
-    background: red;
-    color: white;
+.rule-overlay-content h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.4em;
-    border: none;
-    text-decoration: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 4em;
-    padding-left: 4em;
-    border-radius: 30px;
-    transition: 0.4s;
-    cursor: pointer;
+}
+
+.rule-overlay-content h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: -5px;
 }
 
 .continue-btn {
-    background: green;
-    color: black;
+    text-align: center;
+    background: linear-gradient(to right, #ff8845 0%, #ffb546 100%);
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.2em;
     border: none;
     text-decoration: none;
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-right: 4em;
-    padding-left: 4em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-top: 60px;
     border-radius: 30px;
     transition: 0.4s;
     cursor: pointer;
+}
+
+.continue-btn:hover {
+    text-decoration: none;
+    color: #fff;
 }
