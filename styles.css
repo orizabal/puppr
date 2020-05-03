@@ -497,6 +497,7 @@
     .sub-right-wrapper {
         display: flex;
         justify-content: center;
+        padding-right: 20px;
     }
     
     .container {
@@ -569,4 +570,13 @@
     .continue-btn:hover {
         text-decoration: none;
         color: #fff;
+    }
+    
+    .end-btn {
+        margin-top: 2em;
+        position: absolute;
+    }
+    
+    .second {
+        margin-top: 4em;
     }
