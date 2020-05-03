@@ -19,6 +19,10 @@ const fetchData = (location) => {
             for (var key in response.data) {
                 shelter_array.push(response.data[key]['Photo']);
                 link_array.push(baseShelterURL + response.data[key]['ID']);
+                dogdesc_array.push(response.data[key]["description"].split("<br/>", 1));
+                dogsex_array.push(response.data[key]['Sex']);
+                dogprimbreed_array.push(response.data[key]['PrimaryBreed']);
+                dogsecbreed_array.push(response.data[key]['SecondaryBreed']);
             }
             console.log(shelter_array);
             console.log(link_array);
