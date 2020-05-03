@@ -22,34 +22,94 @@
 <body class="fade-in">
 
     <div class="text-center">
-        <h2>Enter your info!</h2>
+        <h2>Your info!</h2>
     </div>
 
     <div class="container">
-        <form action="">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John...">
+        <form action="selection.html">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Smith...">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John...">
+                </div>
+                <div class="col-md-6">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Smith...">
+                </div>
+            </div>
 
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="someone@example.com...">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="(XXX) XXX-XXXX...">
+                </div>
+                <div class="col-md-6">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="someone@example.com...">
+                </div>
+            </div>
 
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone" placeholder="(XXX) XXX-XXXX...">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="loc">Location</label>
+                    <select id="loc" name="location">
+                        <option value="toronto">Toronto</option>
+                        <option value="vancouver">Vancouver</option>
+                    </select>
+                </div>
+            </div>
 
-            <label for="loc">Location</label>
-            <select id="loc" name="location">
-                <option value="toronto">Toronto</option>
-                <option value="vancouver">Vancouver</option>
-            </select>
+            <div class="text-center">
+                <h2>Dog info!</h2>
+            </div>
 
-            <label for="other">Other notes</label>
-            <textarea id="other" name="other_notes" placeholder="Anything else?" style="height:100px"></textarea>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="sec">Sex</label>
+                    <select id="sec" name="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="size">Size</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+            </div>
 
-            <input type="submit" value="Submit" class="button">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="breed">Breed</label>
+                    <select id="breed" name="breed">
+                        <option value="mixed">Mixed</option>
+                        <option value="pure">Pure</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="email">??</label>
+                    <input type="text" id="email" name="email" placeholder="someone@example.com...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="other">Other notes</label>
+                    <textarea id="other" name="other_notes" placeholder="Anything else?" style="height:100px"></textarea>
+                </div>
+            </div>
+
+            <!-- pure/mixed breed - dropdown -->
+            <!-- sex -->
+            <!-- size -->
+
+            <input type="submit" value="Submit" class=" contact-button " />
         </form>
+
     </div>
 
 </body>
